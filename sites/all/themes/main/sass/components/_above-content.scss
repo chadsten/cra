@@ -1,11 +1,36 @@
 .region-above-content {
   .view-header-image {
+    position: relative;
+
+    img {
+      display: block;
+    }
 
     &.view-display-id-home_page {
       .headline {
-        font-size: 48/16*1em;
+
+        font-size: 24/16*1em;
         font-weight: bold;
         font-style: italic;
+        background-color: $color_gray;
+        color: $color_light_gray;
+        line-height: 1;
+        right: 0;
+        padding: 5/24*1em 10/24*1em;
+        text-transform: uppercase;
+
+        @media (min-width: $media_luke) {
+          position: absolute;
+          font-size: 34/16*1em;
+          padding: 16/48*1em 24/48*1em;
+          top: 70%;
+        }
+
+        @media (min-width: $media_jabba) {
+          font-size: 48/16*1em;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
 

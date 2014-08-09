@@ -1,10 +1,4 @@
 .front {
-
-  .column img {
-    margin: 0;
-
-  }
-
   #main {
     padding: 0;
     background: none;
@@ -17,5 +11,117 @@
     margin: 0;
     padding: 0;
     max-width: none;
+  }
+
+  h1#page-title {
+    font-size: 37/16*1em;
+    margin: 0;
+    padding: 0;
+    background-color: $color_yellow;
+    color: $color_light_gray;
+    font-family: $font_century_gothic;
+    font-weight: bold;
+    border-top: 16/37*1em solid $color_lightish_gray;
+    border-bottom: 2/37*1em solid $color_lightish_gray;
+    text-align: center;
+    padding: 23/37*1em 0;
+    line-height: 1;
+    position: relative;
+
+    @media (min-width: $media_yoda) {
+      font-size: 55/16*1em;
+      padding: 23/55*1em 0;
+    }
+
+    @media (min-width: $media_luke) {
+      display: block;
+      font-size: 72/16*1em;
+      font-family: $font_times;
+      background-color: $color_red;
+      padding: 15/72*1em;
+      border: none;
+    }
+
+    @media (min-width: $media_atat) {
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 230/72*1em;
+        border-bottom: 1px $color_light_gray solid;
+        top: 50%;
+      }
+
+      &:before {
+        left: 35/72*1em;
+      }
+
+      &:after {
+        right: 35/72*1em;
+      }
+    }
+  }
+
+  .column {
+
+    .field-name-body {
+      padding: 20/16*1em;
+      background-color: $color_gray;
+
+      @media (min-width: $media_luke) {
+        padding: 38/16*1em 32/16*1em;
+        background-color: rgba($color_dark_gray, 0.37);
+        margin-bottom: 1em;
+      }
+    }
+
+     img {
+      margin: 0;
+
+    }
+
+    p {
+      font-size: 1em;
+      font-family: $font_century_gothic;
+      color: $color_white;
+      text-align: center;
+
+      @media (min-width: $media_luke) {
+        font-family: $font_arial;
+      }
+
+      &.big {
+        font-size: 20/16*1em;
+        font-weight: bold;
+
+        @media (min-width: $media_yoda) {
+          font-size: 24/16*1em;
+        }
+      }
+
+      &.quote {
+        background-color: $color_brown;
+        font-size: 24/16*1em;
+        font-family: $font_arial;
+        font-weight: bold;
+        font-style: italic;
+        margin: 1.2em -20/24*1em 0 -20/24*1em;
+        padding: 30/24*1em;
+
+        @media (min-width: $media_luke) {
+          margin: 1em 0 0 0;
+          border-radius: 8/24*1em;
+          padding: 20/24*1em;
+        }
+
+        strong {
+          color: $color_yellow;
+
+          @media (min-width: $media_luke) {
+            display: block;
+          }
+        }
+      }
+    }
   }
 }

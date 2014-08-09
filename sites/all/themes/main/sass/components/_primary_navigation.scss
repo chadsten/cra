@@ -24,6 +24,7 @@
     clear: both;
     background-color: $color_dark_gray;
     display: none;
+    margin-left: -20/16*1em;
 
     &.open {
       display: block;
@@ -54,7 +55,7 @@
 
         @media (min-width: $media_luke) {
           display: inline-block;
-          border-right: 2px solid lighten($color_gray, 40%);
+          border-right: 2px solid $color_gray;
         }
 
         &:last-child {
@@ -86,16 +87,12 @@
             display: inline-block;
             border-bottom: none;
             font-family: $font_arial;
-            color: $color_gray;
+            color: $color_dark_gray;
             padding: 12/16*1em 11/16*1em 10/16*1em 11/16*1em;
           }
 
           @media (min-width: $media_jabba) {
             font-size: 18/16*1em;
-            display: inline-block;
-            border-bottom: none;
-            font-family: $font_arial;
-            color: $color_gray;
             padding: 12/18*1em 15/18*1em 10/18*1em 15/18*1em;
           }
         }
