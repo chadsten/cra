@@ -3,7 +3,7 @@
     @include pie-clearfix;
     padding-bottom: 20/16*1em;
     margin-bottom: 20/16*1em;
-    border-bottom: 1px solid $color_orange;
+    border-bottom: 1px solid $color_yellow;
 
     &:last-of-type {
       border-bottom: 0;
@@ -33,11 +33,11 @@
   .views-field-title {
     font-size: 24/16*1em;
     font-weight: 700;
-    color: $color_blue;
+    color: $color_gray;
   }
 
   .views-field-field-position {
-    color: $color_light_blue;
+    color: $color_light_gray;
     margin: 6/16*1em 0 12/16*1em 0;
   }
 
