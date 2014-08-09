@@ -6,3 +6,40 @@
     display: none;
   }
 }
+
+.page-schedule #content {
+  .tabs-primary {
+    border-bottom: 1px solid $color_light_gray;
+    padding: 0 $gutter_desktop !important;
+    margin: 0 (-$gutter_desktop);
+    margin-bottom: 20/16*1em;
+
+    li {
+      margin-bottom: 0;
+
+      a {
+        font-size: 16/24*1em;
+        border-radius: 5px 5px 0 0;
+      }
+    }
+  }
+
+  .views-field-field-schedule-file {
+    a {
+      display: inline-block;
+      background: $color_gray;
+      padding: 20/16*1em;
+      box-sizing: border-box;
+      color: $color_white;
+      text-decoration: none;
+      border-radius: 0 5px 5px 0;
+      position: relative;
+      padding-left: 75/16*1em;
+
+      &:before {
+        content: "";
+        @include sprite-background('schedule-icon');
+      }
+    }
+  }
+}
