@@ -69,17 +69,6 @@ stylesheets[all][] = css/styles.css
 scripts[] = js/script.js
 
 
-; Fonts
-fonts[google_fonts_api][] = "Muli&subset=latin#300;"
-fonts[google_fonts_api][] = "Muli&subset=latin#400;"
-
-fonts[google_fonts_api][] = "Open Sans&subset=latin#700italic"
-fonts[google_fonts_api][] = "Open Sans&subset=latin#italic"
-fonts[google_fonts_api][] = "Open Sans&subset=latin#regular"
-
-
-
-
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of
 ; the region. The text after the equals sign is a descriptive text used on the
@@ -95,13 +84,11 @@ fonts[google_fonts_api][] = "Open Sans&subset=latin#regular"
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 
-regions[top_bar]        = Top Bar
 regions[header]         = Header
 regions[highlighted]    = Highlighted
 regions[help]           = Help
+regions[above_content]  = Above Content
 regions[content]        = Content
-regions[sidebar_first]  = First sidebar
-regions[sidebar_second] = Second sidebar
 regions[sub_footer]     = Sub Footer
 regions[footer]         = Footer
 regions[bottom]         = Page bottom

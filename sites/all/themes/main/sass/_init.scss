@@ -70,38 +70,25 @@ $h6-font-size: 0.67 * $base-font-size;
 // monospace) hints at what type of font to use if the web browser doesn't
 // find any of the fonts in the list.
 
-@font-face {
-  font-family: 'klavika_reg_capsregular';
-  src: url('../fonts/klavikaregcaps-sc-webfont.eot');
-  src: url('../fonts/klavikaregcaps-sc-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/klavikaregcaps-sc-webfont.woff') format('woff'),
-       url('../fonts/klavikaregcaps-sc-webfont.ttf') format('truetype'),
-       url('../fonts/klavikaregcaps-sc-webfont.svg#klavika_reg_capsregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 // First, let's create some font stacks.
-$times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
-$times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
-$georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
+$font_times_new_roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+$font_times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+$font_georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
 
-$verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
-$tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
-$helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
-$arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
-
-$font_muli: 'Muli', Arial, sans-serif;
-$font_opensans: 'Open Sans', Arial, sans-serif;
-$font_klavika_caps: 'klavika_reg_capsregular', sans-serif;
+$font_verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$font_tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
+$font_helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$font_arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$font_century_gothic:  "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family : $font_muli; // The font family set on the html element.
-$font-body        : $font_muli;
+$base-font-family : $font_arial; // The font family set on the html element.
+$font-body        : $font_arial;
 $font-monospace   : $courier;
 
 //
