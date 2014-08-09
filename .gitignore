@@ -11,6 +11,7 @@ sprites2x-*.png
 *.swp
 *.swo
 sites/all/themes/main/css
+sites/all/themes/main/src/css
 sites/all/themes/main/images
 sites/all/themes/main/js/script.js
 *.sublime-project
