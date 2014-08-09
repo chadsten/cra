@@ -1,0 +1,235 @@
+.block.menu-button {
+  float: right;
+  margin-top: 17/16*1em;
+  margin-right: 10/16*1em;
+
+  a.menu-button {
+    @include sprite-background(menu-button);
+  }
+
+  @media all and (min-width: $media_luke) {
+    display: none;
+  }
+}
+
+#block-system-main-menu {
+  clear: both;
+  position: relative;
+  top: 4/16*1em;
+  margin-bottom: 13/16*1em;
+  display: block;
+
+  &.open {
+    display: block;
+  }
+
+  @media all and (min-width: $media_luke) {
+    display: block;
+    float: right;
+    clear: none;
+    margin: 10/16*1em 0 0 0;
+  }
+
+   > .menu-wrapper {
+    > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @media all and (min-width: $media_luke) {
+        text-align: right;
+      }
+
+      > li {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        @media all and (min-width: $media_luke) {
+          display: inline-block;
+          position: relative;
+          z-index: 1;
+        }
+
+        a {
+          font-size: 18/16*1em;
+          display: block;
+          text-decoration: none;
+
+          border-bottom: 1px solid $color_gray;
+          color: $color_white;
+          padding: 14/18*1em;
+          line-height: 1.1em;
+          background-color: $color_dark_gray;
+
+          &:hover {
+            background-color: $color_gray !important;
+            color: $color_light_gray !important;
+          }
+
+          @media all and (min-width: $media_luke) {
+            background-color: transparent;
+            border-bottom: none;
+            color: $color_white;
+            font-size: 14/16*1em;
+            padding: 20/14*1em 14/14*1em;
+
+            &:hover {
+              color: $color_light_blue !important;
+              background-color: transparent !important;
+            }
+          }
+        }
+
+        &:hover {
+          > .menu-wrapper > ul {
+            display: block;
+          }
+        }
+
+        > .menu-wrapper > ul {
+          display: none;
+
+          @media all and (min-width: $media_luke) {
+            position: absolute;
+            right: 10/16*1em;
+            width: 200/16*1em;
+            text-align: left;
+            border-radius: 5/17*1em;
+            box-shadow: 2px 3px rgba(23,23,24,.11);
+          }
+
+          > li {
+            display: block;
+            margin: 0;
+            padding: 0;
+
+            @media all and (min-width: $media_luke) {
+              position: relative;
+
+              &:first-child > a {
+                border-radius: 5/17*1em 5/17*1em 0 0;
+
+                &:before {
+                  content: "";
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  top: -7/16*1em;
+                  right: 10/16*1em;
+                  border-left: 8px solid transparent;
+                  border-right: 8px solid transparent;
+                  border-bottom: 9px solid $color-white;
+                }
+              }
+
+              &:last-child > a {
+                border-bottom: none;
+                border-radius: 0 0 5/17*1em 5/17*1em;
+              }
+
+              &:only-child > a {
+                border-radius: 5/17*1em;
+              }
+            }
+
+            > a {
+              padding-left: 24/16*1em;
+              border-bottom: 1px solid $color_light_gray;
+              background-color: darken($color_light_gray, 10%);
+
+              @media all and (min-width: $media_luke) {
+                background-color: $color-white;
+                font-size: 17/16*1em;
+                padding: 10/17*1em;
+                color: $color_blue;
+                text-transform: none;
+                border-bottom-color: $color_lighter_blue;
+              }
+            }
+
+            &.is-expanded > a {
+              @media all and (min-width: $media_luke) {
+                &:after {
+                  content: "";
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border-top: 6/16*1em solid transparent;
+                  border-bottom: 6/16*1em solid transparent;
+                  border-left: 6/16*1em solid $color_blue;
+                  right: 10/16*1em;
+                  top: 12/16*1em;
+                }
+              }
+            }
+
+            &:hover {
+              > .menu-wrapper > ul {
+                display: block;
+              }
+
+              @media all and (min-width: $media_luke) {
+                > a {
+                  background-color: $color_random_blue !important;
+                  color: $color_white !important;
+
+                  &:before {
+                    border-bottom-color: $color_random_blue;
+                  }
+
+                  &:after {
+                    border-left-color: $color_white;
+                  }
+                }
+              }
+            }
+
+            > .menu-wrapper > ul {
+              display: none;
+
+              @media all and (min-width: $media_luke) {
+                position: absolute;
+                left: 100%;
+                top: 10%;
+                z-index: -1;
+                box-shadow: 2px 3px rgba(23,23,24,.11);
+              }
+
+              > li {
+                display: block;
+                margin: 0;
+                padding: 0;
+
+                &:last-child a {
+                  border-bottom: none;
+                }
+
+                > a {
+                  background-color: darken($color_light_gray, 20%);
+                  padding-left: 36/16*1em;
+                  border-bottom: 1px solid $color_light_gray;
+
+                  @media all and (min-width: $media_luke) {
+                    font-size: 17/16*1em;
+                    padding: 15/17*1em;
+                    background-color: $color_random_blue;
+                    color: $color_white;
+                    text-transform: none;
+                    width: 150/17*1em;
+                    border-bottom-color: $color_lighter_blue;
+
+                    &:hover {
+                      background-color: $color_blue !important;
+                      color: $color_white !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

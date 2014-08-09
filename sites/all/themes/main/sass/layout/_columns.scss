@@ -1,0 +1,45 @@
+.no-sidebars {
+  #top-bar-inner,
+  #content-inner,
+  .region-sub-footer,
+  #footer {
+    max-width: $media_atat;
+    margin: 0 auto;
+  }
+}
+
+#main {
+  max-width: $media_atat;
+  margin: 0 auto;
+  padding: 30/16*1em $gutter_mobile;
+  box-sizing: border-box;
+
+  @media all and (min-width: $media_ewok) {
+    padding: 40/16*1em $gutter_tablet;
+  }
+
+  @media all and (min-width: $media_jabba) {
+    padding: 40/16*1em $gutter_desktop;
+  }
+
+  @media all and (min-width: $media_jabba + 40/16*1em) {
+    padding: 60/16*1em 0;
+  }
+}
+
+#main-inner {
+  max-width: $media_jabba;
+  margin: 0 auto;
+  padding: 6/16*1em $gutter_mobile;
+  box-sizing: border-box;
+
+  @media all and (min-width: $media_ewok) {
+    margin: 60/16*1em auto;
+    padding: 6/16*1em $gutter_tablet;
+  }
+
+  @media all and (min-width: $media_vader) {
+    margin: 60/16*1em auto;
+    padding: 6/16*1em $gutter_desktop;
+  }
+}

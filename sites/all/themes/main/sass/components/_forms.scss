@@ -1,0 +1,43 @@
+.form-item {
+  margin-bottom: 5/16*1em;
+
+  .form-text, .form-textarea {
+    font-size: 18/16*1em;
+    background-color: $color_white;
+    padding: 10/16*1em;
+    color: $color_blue;
+    border: 1px solid $color_gray;
+    width: 100%;
+
+    @media all and (min-width: $media_ewok) {
+      padding: 14/16*1em;
+    }
+  }
+}
+
+.form-type-checkbox {
+  label {
+    display: inline-block;
+  }
+}
+
+.form-type-textfield, .webform-component-textfield, .webform-component-textfield, .webform-component-textarea, .form-email, .form-type-password, .webform-component-email {
+  position: relative;
+
+  label {
+    position: absolute;
+    font-size: 18/16*1em;
+    color: $color_blue;
+    top: 15/18*1em;
+    left: 15/18*1em;
+    z-index: 1;
+    font-weight: normal;
+  }
+}
+
+.form-actions {
+  margin: 12/16*1em 0;
+  .form-submit {
+    @include button-base;
+  }
+}
