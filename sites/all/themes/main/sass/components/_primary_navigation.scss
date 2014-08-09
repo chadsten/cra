@@ -1,9 +1,105 @@
 #header-inner {
+
   .mobile-icon {
-    @include sprite_background(icon_mobile-menu);
+    display: block;
+    height: 74/16*1em;
+    width: 81/16*1em;
+    padding: 1px;
+    background-color: $color_dark_gray;
+    float: right;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      @include sprite_background(icon_mobile-menu);
+      margin: (76 - 20)/2/16*1em auto 0 auto;
+    }
+
+    @media (min-width: $media_luke) {
+      display: none;
+    }
   }
 
   #block-system-main-menu {
+    clear: both;
+    background-color: $color_dark_gray;
+    display: none;
 
+    &.open {
+      display: block;
+    }
+
+    @media (min-width: $media_luke) {
+      float: right;
+      display: block;
+      background-color: transparent;
+      clear: none;
+      margin-top: 20/16*1em;
+      margin-bottom: 15/16*1em;
+    }
+
+    @media (min-width: $media_vader) {
+      margin-top: 30/16*1em;
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0;
+        padding: 0;
+
+        @media (min-width: $media_luke) {
+          display: inline-block;
+          border-right: 2px solid lighten($color_gray, 40%);
+        }
+
+        &:last-child {
+          a {
+            border-bottom: none;
+          }
+
+          @media (min-width: $media_luke) {
+            border-right: none;
+          }
+        }
+
+        a {
+          font-size: 18/16*1em;
+          padding: 21/18*1em 34/18*1em;
+          font-family: $font_century_gothic;
+          color: $color_light_gray;
+          display: block;
+          text-decoration: none;
+          border-bottom: 1px solid $color_gray;
+          line-height: 1;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          @media (min-width: $media_luke) {
+            font-size: 16/16*1em;
+            display: inline-block;
+            border-bottom: none;
+            font-family: $font_arial;
+            color: $color_gray;
+            padding: 12/16*1em 11/16*1em 10/16*1em 11/16*1em;
+          }
+
+          @media (min-width: $media_jabba) {
+            font-size: 18/16*1em;
+            display: inline-block;
+            border-bottom: none;
+            font-family: $font_arial;
+            color: $color_gray;
+            padding: 12/18*1em 15/18*1em 10/18*1em 15/18*1em;
+          }
+        }
+      }
+    }
   }
 }

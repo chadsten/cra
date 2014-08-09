@@ -1,12 +1,25 @@
 #header {
   background: url(../images/top-bg-pattern.jpg);
+  overflow: auto;
+  padding: 0 0 0 20/16*1em;
+
+  @media (min-width: $media_atat + 48/16*1em) {
+    padding-left: 0 20/16*1em;
+  }
 
   #header-inner {
-
+    max-width: 1208/16*1em;
     margin: 0 auto;
 
     #block-block-1 .logo {
       @include sprite_background(logo_small);
+      margin-top: (76 - 40)/2/16*1em;
+      float: left;
+
+      @media (min-width: $media_vader) {
+        @include sprite_background(logo);
+        margin: 12/16*1em 0 10/16*1em;
+      }
     }
   }
 }
