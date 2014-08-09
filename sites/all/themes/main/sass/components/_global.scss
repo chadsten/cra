@@ -65,11 +65,11 @@
   }
 
   a {
-    color: $color_blue;
+    color: $color_yellow;
     text-decoration: underline;
 
     &:hover {
-      color: $color_light_blue;
+      color: $color_light_yellow;
       text-decoration: none;
     }
   }

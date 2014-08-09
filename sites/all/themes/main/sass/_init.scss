@@ -11,7 +11,6 @@
 // - Last we define our custom mixins for this theme.
 //
 
-
 // =============================================================================
 // Variables
 // =============================================================================
@@ -38,7 +37,6 @@
 $legacy-support-for-ie6: false;
 $legacy-support-for-ie7: false;
 $legacy-support-for-ie8: true;
-
 
 //
 // Font faces, stacks and sizes.
@@ -69,7 +67,6 @@ $h6-font-size: 0.67 * $base-font-size;
 // on the user's computer. The final "generic" font (sans-serif, serif or
 // monospace) hints at what type of font to use if the web browser doesn't
 // find any of the fonts in the list.
-
 
 // First, let's create some font stacks.
 $font_times_new_roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
@@ -132,10 +129,8 @@ $color_lightish_gray : #e8e8e8;
 $color_light_gray    : #f2f3f5;
 $color_white         : #ffffff;
 
-
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
-
 
 $gutter_mobile: 20/16*1em;
 $gutter_tablet: 30/16*1em;
@@ -152,7 +147,6 @@ $tabs-border: #bbb;
 // Once the sprites are generated, update the width of the non retina sprite
 $normal-sprite-width: 263px;
 
-
 // =============================================================================
 // Partials to be shared with all .scss files.
 // =============================================================================
@@ -167,7 +161,6 @@ $normal-sprite-width: 263px;
 @import "compass/css3";
 // Helps set up a vertical rhythm.
 @import "compass/typography";
-
 
 // Now we add our custom helper mixins.
 @import "mixins";
