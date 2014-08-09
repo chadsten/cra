@@ -1,0 +1,18 @@
+.region-above-content {
+  .view-header-image {
+
+    &.view-display-id-home_page {
+      .headline {
+        font-size: 48/16*1em;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+
+    &.view-display-id-inner_page {
+      .headline {
+
+      }
+    }
+  }
+}

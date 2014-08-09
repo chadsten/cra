@@ -1,2 +1,21 @@
 .front {
+
+  .column img {
+    margin: 0;
+
+  }
+
+  #main {
+    padding: 0;
+    background: none;
+  }
+
+  #main-inner {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
 }
