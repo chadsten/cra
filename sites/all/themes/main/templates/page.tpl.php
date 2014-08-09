@@ -10,12 +10,6 @@
 
 <div id="page">
 
-  <div id="top-bar">
-    <div id="top-bar-inner">
-      <?php print render($page['top_bar']); ?>
-    </div>
-  </div>
-
   <header class="header" id="header" role="banner">
     <div id="header-inner">
       <?php print render($page['header']); ?>
