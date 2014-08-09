@@ -1,0 +1,22 @@
+.view-testimonials {
+  .views-row {
+    @include pie-clearfix;
+    padding-bottom: 20/16*1em;
+    margin-bottom: 20/16*1em;
+    border-bottom: 1px solid $color_yellow;
+
+    .views-field-title {
+      font-size: 18/16*1em;
+      color: $color_dark_gray;
+    }
+
+    .views-field-field-testimonial-date {
+      font-style: italic;
+      color: $color_gray;
+    }
+
+    &.views-row-last {
+      border-bottom: 0;
+    }
+  }
+}
