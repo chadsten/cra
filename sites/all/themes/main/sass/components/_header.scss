@@ -11,7 +11,7 @@
       float: left;
 
       a.logo {
-
+        @include sprite-background(vgi-technology-logo);
       }
     }
   }
