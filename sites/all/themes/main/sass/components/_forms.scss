@@ -5,7 +5,7 @@
     font-size: 18/16*1em;
     background-color: $color_white;
     padding: 10/16*1em;
-    color: $color_blue;
+    color: $color_dark_gray;
     border: 1px solid $color_gray;
     width: 100%;
 
@@ -25,9 +25,8 @@
   position: relative;
 
   label {
-    position: absolute;
     font-size: 18/16*1em;
-    color: $color_blue;
+    color: $color_dark_gray;
     top: 15/18*1em;
     left: 15/18*1em;
     z-index: 1;

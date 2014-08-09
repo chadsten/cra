@@ -1,4 +1,7 @@
 .tabs-primary {
+  padding: 0 !important;
+  margin: 12/16*1em 0;
+
   li {
     display: block;
     width: 100%;
@@ -12,6 +15,7 @@
 
     a {
       @include button-base;
+      font-size: 1em;
       width: 100%;
       box-sizing: border-box;
       text-align: center;
@@ -20,6 +24,10 @@
         width: auto;
         text-align: left;
       }
+    }
+
+    &.is-active {
+      display: none;
     }
   }
 }
