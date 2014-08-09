@@ -8,37 +8,79 @@
 }
 
 .page-schedule #content {
+  .views-field-field-schedule-file {
+    a {
+      background: $color_gray;
+      padding: 25/16*1em ;
+      box-sizing: border-box;
+      color: $color_white;
+      text-decoration: none;
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 20/16*1em;
+
+      @media all and (min-width: $media_yoda) {
+        padding-left: 88/16*1em;
+        width: auto;
+        display: inline-block;
+        border-radius: 0 5px 5px 0;
+        text-align: left;
+      }
+
+      &:before {
+        content: "";
+        @include sprite-background('schedule-icon');
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+
+        @media all and (min-width: $media_yoda) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.page-node-9,
+.page-schedule #content {
   .tabs-primary {
     border-bottom: 1px solid $color_light_gray;
-    padding: 0 $gutter_desktop !important;
-    margin: 0 (-$gutter_desktop);
     margin-bottom: 20/16*1em;
+    padding: 0 $gutter_mobile !important;
+    margin: 0 (-$gutter_mobile);
+
+    @media all and (min-width: $media_ewok) {
+      padding: 0 $gutter_tablet !important;
+      margin: 0 (-$gutter_tablet);
+      margin-bottom: 20/16*1em;
+    }
+
+    @media all and (min-width: $media_vader) {
+      padding: 0 $gutter_desktop !important;
+      margin: 0 (-$gutter_desktop);
+      margin-bottom: 20/16*1em;
+    }
 
     li {
       margin-bottom: 0;
 
       a {
         font-size: 16/24*1em;
-        border-radius: 5px 5px 0 0;
-      }
-    }
-  }
+        margin-bottom: 20/16*1em;
 
-  .views-field-field-schedule-file {
-    a {
-      display: inline-block;
-      background: $color_gray;
-      padding: 20/16*1em;
-      box-sizing: border-box;
-      color: $color_white;
-      text-decoration: none;
-      border-radius: 0 5px 5px 0;
-      position: relative;
-      padding-left: 75/16*1em;
+        @media all and (min-width: $media_ewok) {
+          border-radius: 5px 5px 0 0;
+          margin-bottom: 0;
+        }
 
-      &:before {
-        content: "";
-        @include sprite-background('schedule-icon');
+        &.active {
+          background-color: $color_gray;
+        }
       }
     }
   }

@@ -1,16 +1,18 @@
 .form-item {
-  margin-bottom: 5/16*1em;
+  margin-bottom: 16/16*1em;
 
   .form-text, .form-textarea {
     font-size: 18/16*1em;
-    background-color: $color_white;
-    padding: 10/16*1em;
+    background-color: $color_light_gray;
+    padding: 10/18*1em;
     color: $color_dark_gray;
-    border: 1px solid $color_gray;
+    border: 1px solid $color_lightish_gray;
     width: 100%;
+    border-radius: 5px;
+    max-width: $media_luke;
 
     @media all and (min-width: $media_ewok) {
-      padding: 14/16*1em;
+      padding: 14/18*1em;
     }
   }
 }
@@ -21,7 +23,14 @@
   }
 }
 
-.form-type-textfield, .webform-component-textfield, .webform-component-textfield, .webform-component-textarea, .form-email, .form-type-password, .webform-component-email {
+.form-type-textfield,
+.webform-component-textfield,
+.webform-component-date,
+.webform-component-textfield,
+.webform-component-textarea,
+.form-email,
+.form-type-password,
+.webform-component-email {
   position: relative;
 
   label {
@@ -31,6 +40,7 @@
     left: 15/18*1em;
     z-index: 1;
     font-weight: normal;
+    margin-bottom: 8/16*1em;
   }
 }
 

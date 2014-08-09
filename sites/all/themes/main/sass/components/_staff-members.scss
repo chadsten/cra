@@ -10,7 +10,7 @@
     }
   }
 
-  .views-field-field-staff-image {
+  .views-field-field-staff-member-image {
     @media all and (min-width: $media_ewok) {
       float: left;
       width: auto;
@@ -33,12 +33,13 @@
   .views-field-title {
     font-size: 24/16*1em;
     font-weight: 700;
-    color: $color_gray;
+    color: $color_dark_gray;
   }
 
-  .views-field-field-position {
-    color: $color_light_gray;
-    margin: 6/16*1em 0 12/16*1em 0;
+  .views-field-field-staff-member-position {
+    font-size: 20/16*1em;
+    color: $color_gray;
+    margin: 6/20*1em 0 12/20*1em 0;
   }
 
   .views-field-body p {
