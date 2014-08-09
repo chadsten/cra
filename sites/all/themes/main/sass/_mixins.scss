@@ -66,6 +66,10 @@
   }
 }
 
+@mixin drop-shadow {
+  box-shadow: 1px 3px 4px rgba(0,0,0,.13);
+}
+
 
 $sprites: sprite-map("sprites/*.png", $spacing: 15px);
 $sprites_retina: sprite-map("sprites2x/*.png", $spacing: 30px);
