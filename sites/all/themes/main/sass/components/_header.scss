@@ -1,18 +1,12 @@
 #header {
-  ;
+  background: url(../images/top-bg-pattern.jpg);
 
   #header-inner {
 
     margin: 0 auto;
 
-    @include pie-clearfix;
-
-    .block.logo {
-      float: left;
-
-      a.logo {
-        @include sprite-background(vgi-technology-logo);
-      }
+    #block-block-1 .logo {
+      @include sprite_background(logo_small);
     }
   }
 }
