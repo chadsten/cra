@@ -12,12 +12,25 @@
   box-shadow: 0px 0px 6px #666;
 }
 
+.page-node-2 {
+  #main-inner {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
 .column {
+  p,
+  li,
+  blockquote {
+    font-size: 24/16*1em;
+    line-height: 32/24*1em;
+  }
+
   p {
-    font-size: 16/16*1em;
-    line-height: 24/16*1em;
-    margin: 0 0 18/16*1em;
-    color: $color_dark_blue;
+    margin: 0 0 18/24*1em;
+    color: #000;
   }
 
   ol,
@@ -25,6 +38,10 @@
     li {
 
     }
+  }
+
+  blockquote {
+    color: red;
   }
 
   a {

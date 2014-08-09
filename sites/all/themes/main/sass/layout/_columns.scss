@@ -43,3 +43,18 @@
     padding: 6/16*1em $gutter_desktop;
   }
 }
+
+.page-node-2 {
+  #main {
+    @media all and (min-width: $media_jabba + 40/16*1em) {
+      padding: 60/16*1em $gutter_tablet;
+    }
+  }
+
+  #main-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  }
+}
