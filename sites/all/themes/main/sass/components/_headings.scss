@@ -1,24 +1,14 @@
 h1 {
-  font-size: 18/16*1em;
-  line-height: 30/18*1em;
-  color: $color_white;
-  font-weight: 700;
-
   &.page-title,
   &#page-title {
-    color: $color_blue;
+    color: $color_dark_gray;
     font-size: 24/16*1em;
-    line-height: 28/24*1em;
+    line-height: 30/24*1em;
+    font-weight: 700;
 
     @media all and (min-width: $media_luke) {
-      font-size: 28/16*1em;
-      line-height: 34/28*1em;
+      font-size: 30/16*1em;
+      line-height: 38/30*1em;
     }
   }
-}
-
-h2 {
-  font-size: 24/16*1em;
-  line-height: 32/24*1em;
-  color: $color_dark_blue;
 }
