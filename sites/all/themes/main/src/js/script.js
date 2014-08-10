@@ -34,6 +34,16 @@
     }
     // End Accordions
 
+    // Append weird links
+    if ($('.page-schedule #page-title').length || $('.page-node-9 #page-title').length) {
+      $("#page-title").append("<a href='/user/logout/' class='js-append logout'>Logout</a>");
+    }
+
+    if ($('.page-user #page-title').length) {
+      $(".form-actions").append("<a href='/user/password/' class='js-append reset-password'>Reset Password</a>");
+    }
+    // End Append weird links
+
 	}); // End Ready
 
 })(jQuery, Drupal, this, this.document);
