@@ -9,7 +9,7 @@
 #main-inner {
   background-color: $color_white;
   border-radius: 20px;
-  box-shadow: 0px 0px 6px #666;
+  @include drop-shadow;
 }
 
 .page-node-2 {
@@ -27,7 +27,7 @@
   h4,
   h5,
   h6 {
-    color: $color_dark_gray;
+    color: $color_darkish_gray;
   }
 
   h2 {
@@ -35,11 +35,9 @@
   }
 
   h3 {
-    font-size: 26/16*1em;
-  }
-
-  h4 {
     font-size: 24/16*1em;
+    margin: 50/24*1em 0 10/24*1em 0;
+    text-transform: uppercase;
   }
 
   p,
@@ -48,7 +46,7 @@
     font-family: $font_century_gothic;
     font-size: 24/16*1em;
     line-height: 32/24*1em;
-    color: $color_dark_gray;
+    color: $color_darkish_gray;
   }
 
   p {
@@ -62,6 +60,7 @@
 
   blockquote {
     color: $color_red;
+    margin: 30/16*1em 0;
   }
 
   a {

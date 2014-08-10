@@ -1,0 +1,22 @@
+.client-login {
+  position: absolute;
+  right: 0;
+  bottom: 0/16*1em;
+  display: block;
+  background-color: $color_red;
+  padding: 13/16*1em 80/16*1em 13/16*1em 42/16*1em;
+  color: $color_white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0 0 5px 5px;
+  z-index: 99;
+  margin-right: 20/16*1em;
+
+  &:after {
+    @include sprite-background('icon_client-login');
+    content: "";
+    position: absolute;
+    right: 30/16*1em;
+    top: 14/16*1em;
+  }
+}

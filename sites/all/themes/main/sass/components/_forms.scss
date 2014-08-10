@@ -5,7 +5,7 @@
     font-size: 18/16*1em;
     background-color: $color_light_gray;
     padding: 10/18*1em;
-    color: $color_dark_gray;
+    color: $color_darkish_gray;
     border: 1px solid $color_lightish_gray;
     width: 100%;
     border-radius: 5px;
@@ -30,12 +30,13 @@
 .webform-component-textarea,
 .form-email,
 .form-type-password,
+.webform-component-phone,
 .webform-component-email {
   position: relative;
 
   label {
     font-size: 18/16*1em;
-    color: $color_dark_gray;
+    color: $color_darkish_gray;
     top: 15/18*1em;
     left: 15/18*1em;
     z-index: 1;

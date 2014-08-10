@@ -2,6 +2,8 @@
   background: url(../images/top-bg-pattern.jpg);
   overflow: auto;
   padding: 0 0 0 20/16*1em;
+  position: relative;
+  @include drop-shadow;
 
   @media (min-width: $media_atat + 48/16*1em) {
     padding-left: 0 20/16*1em;

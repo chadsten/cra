@@ -1,7 +1,7 @@
 h1 {
   &.page-title,
   &#page-title {
-    color: $color_dark_gray;
+    color: $color_darkish_gray;
     font-size: 24/16*1em;
     line-height: 30/24*1em;
     font-weight: 700;
@@ -11,4 +11,10 @@ h1 {
       line-height: 38/30*1em;
     }
   }
+}
+
+#content-inner h4 {
+  color: $color_yellow;
+  font-size: 1.3em;
+  margin: 0;
 }

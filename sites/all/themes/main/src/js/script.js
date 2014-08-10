@@ -19,6 +19,21 @@
       return false;
     });
 
+    // Accordions
+    if ($('.view-id-engineered_systems_detail').length > 0) {
+      var allPanels = $('.view-id-engineered_systems_detail .views-row > .content').hide();
+      var allHeadings = $('.view-id-engineered_systems_detail .views-row > .heading');
+
+      $('.view-id-engineered_systems_detail .views-row > .heading').click(function() {
+        allHeadings.removeClass('active');
+        allPanels.slideUp('fast');
+        $(this).next().slideDown('fast');
+        $(this).addClass('active');
+        return false;
+      });
+    }
+    // End Accordions
+
 	}); // End Ready
 
 })(jQuery, Drupal, this, this.document);
