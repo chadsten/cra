@@ -1,7 +1,7 @@
 .client-login {
   position: absolute;
   right: 0;
-  bottom: 0/16*1em;
+  bottom: -50/16*1em;
   display: block;
   background-color: $color_red;
   padding: 13/16*1em 80/16*1em 13/16*1em 42/16*1em;
@@ -11,7 +11,10 @@
   border-radius: 0 0 5px 5px;
   z-index: 99;
   margin-right: 20/16*1em;
-  display: none;
+
+  @media all and (min-width: $media_atat) {
+    margin-right: 40/16*1em;
+  }
 
   &:after {
     @include sprite-background('icon_client-login');
