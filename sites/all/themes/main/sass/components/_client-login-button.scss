@@ -11,6 +11,7 @@
   border-radius: 0 0 5px 5px;
   z-index: 99;
   margin-right: 20/16*1em;
+  display: none;
 
   &:after {
     @include sprite-background('icon_client-login');
